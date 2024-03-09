@@ -24,7 +24,6 @@
 #c1-inner {
     width: 50%;
     aspect-ratio: 1;
-    border: 1px solid #000;
     position: relative;
     top: 25%;
     left: 25%;
@@ -50,6 +49,7 @@
     border-radius: 50%;
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 0.3);
 }
 
 .c1-zero::before {
@@ -62,4 +62,32 @@
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 0px 30px #fff;
+}
+
+#c1-nums > p:nth-child(2) {
+    left: 15px;
+}
+
+#c1-n1 {
+    position: absolute;
+    height: 100px;
+    width: 23px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 0.3);
+    z-index: 99;
+}
+
+#c1-n1::after {
+    content: "";
+    position: absolute;
+    right: 18px;
+    top: 1px;
+    height: 40px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 0.3);
+    transform: rotate(45deg);
+    z-index: -99;
 }
