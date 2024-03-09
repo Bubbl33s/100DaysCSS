@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 400px;
+    aspect-ratio: 1;
+    border-radius: 5px;
+}
+
+#c1 {
+
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #43399f, #4ec5ca);
+    color: #fff;
+    font-weight: bolder;
+}
+
+#c1-inner {
+    width: 50%;
+    aspect-ratio: 1;
+    border: 1px solid #000;
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+
+#c1-text p:first-child {
+    font-size: 84px;
+    margin-top: -10px;
+}
+
+#c1-text p:last-child {
+    font-size: 25px;
+    margin-top: -20px;
+}
+
+#c1-nums {
+    display: flex;
+}
+
+.c1-zero {
+    width: 50%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.c1-zero::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 0px 30px #fff;
+}
